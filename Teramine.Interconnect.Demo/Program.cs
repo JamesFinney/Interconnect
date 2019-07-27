@@ -65,7 +65,7 @@ namespace Teramine.Interconnect.Example
             {
                 long number = 0;
 
-                while(!stop)
+                while (!stop)
                 {
                     var response = session.Send(Encoding.UTF8.GetBytes($"Please accept message number {number}"));
                     var responseMessage = Encoding.UTF8.GetString(response.Data);
@@ -80,7 +80,7 @@ namespace Teramine.Interconnect.Example
                         // the server rejected our message
                         Console.WriteLine($"The server rejected our message number {number} with the response '{responseMessage}'. Resending...");
                         response = session.Send(Encoding.UTF8.GetBytes($"Please accept message number {number}"));
-                        if(response.Accepted == true)
+                        if (response.Accepted == true)
                         {
                             Console.WriteLine($"The server has now accepted our message number {number}");
                         }
