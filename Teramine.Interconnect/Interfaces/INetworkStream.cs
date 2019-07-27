@@ -33,21 +33,85 @@ namespace Teramine.Interconnect.Interfaces
 {
     public interface INetworkStream
     {
+        /// <summary>
+        /// The position within the network stream
+        /// </summary>
         long Position { get; set; }
+
+        /// <summary>
+        /// The length of the network stream
+        /// </summary>
         long Length { get; }
+
+        /// <summary>
+        /// True if the network stream can be written to; False if it cannot
+        /// </summary>
         bool CanWrite { get; set; }
 
+        /// <summary>
+        /// Used for SSL connections to authenticate as the server side of the connection
+        /// </summary>
         void AuthenticateAsServer();
+
+        /// <summary>
+        /// Used for SSL connections to authenticate as the client side of the connection
+        /// </summary>
         void AuthenticateAsClient();
 
+        /// <summary>
+        /// Writes data to the netowrk stream
+        /// </summary>
+        /// <param name="buffer">A buffer containing the data to be written</param>
+        /// <param name="offset">The offset to start from within the supplied the buffer</param>
+        /// <param name="size">The number of bytes to write</param>
         void Write(byte[] buffer, int offset, int size);
+
+        /// <summary>
+        /// Asynchronously writes data to the network stream
+        /// </summary>
+        /// <param name="buffer">A buffer containing the data to be written</param>
+        /// <param name="offset">The offset to start from within the supplied the buffer</param>
+        /// <param name="size">The number of bytes to write</param>
+        /// <returns>The write task</returns>
         Task WriteAsync(byte[] buffer, int offset, int size);
+
+        /// <summary>
+        /// Asynchronously writes data to the network stream with a cancellation token
+        /// </summary>
+        /// <param name="buffer">A buffer containing the data to be written</param>
+        /// <param name="offset">The offset to start from within the supplied the buffer</param>
+        /// <param name="size">The number of bytes to write</param>
+        /// <param name="token">the csncellation token</param>
+        /// <returns>The write task</returns>
         Task WriteAsync(byte[] buffer, int offset, int size, CancellationToken token);
 
+        /// <summary>
+        /// Reads data from the network stream from its current position
+        /// </summary>
+        /// <param name="buffer">the buffer in which to read the data</param>
+        /// <param name="offset">the offset at which to start in the buffer</param>
+        /// <param name="size">the number of bytes to read</param>
+        /// <returns>the number of bytes actually read</returns>
         int Read(byte[] buffer, int offset, int size);
+
+        /// <summary>
+        /// Reads data from the network stream from its current position with a timeout
+        /// </summary>
+        /// <param name="buffer">the buffer in which to read the data</param>
+        /// <param name="offset">the offset at which to start in the buffer</param>
+        /// <param name="size">the number of bytes to read</param>
+        /// <param name="timeoutMs">the timeout in milliseconds</param>
+        /// <returns>the number of bytes actually read</returns>
         int Read(byte[] buffer, int offset, int size, int timeoutMs);
 
+        /// <summary>
+        /// Closes the network stream
+        /// </summary>
         void Close();
+
+        /// <summary>
+        /// Closes and disposed of the network stream
+        /// </summary>
         void Dispose();
     }
 }

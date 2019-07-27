@@ -31,7 +31,9 @@ namespace Teramine.Interconnect.Interfaces
 {
     public interface IListener
     {
+        /// <summary>
+        /// Raised when a new connection is received. The connection has been negotiated and is open when this is raised.
+        /// </summary>
         event EventHandler<IConnection> OnConnection;
-
     }
 }

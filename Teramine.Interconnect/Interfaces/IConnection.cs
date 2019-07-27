@@ -31,16 +31,52 @@ namespace Teramine.Interconnect.Interfaces
 {
     public interface IConnection
     {
+        /// <summary>
+        /// Raised when a new session has been initiated. The session must be Accepted or Reject to avoid a timeout
+        /// </summary>
         event EventHandler<Session> OnSession;
+
+        /// <summary>
+        /// Raised when the Session's underlying connection has been closed
+        /// </summary>
         event EventHandler OnClosed;
+
+        /// <summary>
+        /// Raised when an error has occured
+        /// </summary>
         event EventHandler OnError;
 
+        /// <summary>
+        /// Unique connection identifier
+        /// </summary>
         string ID { get; }
+
+        /// <summary>
+        /// Application specific connection data which is set when the connection is created
+        /// </summary>
         Dictionary<string, string> Data { get; }
+
+        /// <summary>
+        /// True if the connection is the client side of the connection; False if it is the server side
+        /// </summary>
         bool IsClient { get; }
 
+        /// <summary>
+        /// Creates a new session with the specified name and initial session data
+        /// </summary>
+        /// <param name="name">The name of the session</param>
+        /// <param name="data">Optional application specific data</param>
+        /// <returns>Returns the created session. If the session is rejected or times out an exception will be thrown</returns>
         Session CreateSession(string name, byte[] data = null);
+
+        /// <summary>
+        /// Closes the session
+        /// </summary>
         void Close();
+
+        /// <summary>
+        /// Closes and disposed of the session
+        /// </summary>
         void Dispose();
     }
 }

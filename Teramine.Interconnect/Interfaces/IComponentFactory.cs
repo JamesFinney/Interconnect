@@ -34,7 +34,22 @@ namespace Teramine.Interconnect.Interfaces
 {
     public interface IComponentFactory
     {
+        /// <summary>
+        /// Builds a ITcpListener using the provided parameters
+        /// </summary>
+        /// <param name="address">The address on which to listen for TCP connections</param>
+        /// <param name="port">The port on which to listen for TCP connections</param>
+        /// <param name="sslSettings">The SSL settings for connections. Set it to null or SslSettings.NoSsl for an unencrypted connection</param>
+        /// <returns>Returns the created ITcpListener</returns>
         ITcpListener BuildTcpListener(IPAddress address, int port, SslSettings sslSettings);
+
+        /// <summary>
+        /// Builds a ITcpClient using the provided connection paramters
+        /// </summary>
+        /// <param name="address">The address of the host to connect to</param>
+        /// <param name="port">The port on which to connect</param>
+        /// <param name="sslSettings">The SSL settings for connections. Set it to null or SslSettings.NoSsl for an unencrypted connection</param>
+        /// <returns>Returns the created ITcpClient</returns>
         ITcpClient BuildTcpClient(string address, int port, SslSettings sslSettings);
     }
 }
