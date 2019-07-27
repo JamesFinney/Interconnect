@@ -28,10 +28,10 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
-using Teramine.DSC.Interconnect.Codecs;
-using Teramine.DSC.Interconnect.Models;
+using Teramine.Interconnect.Codecs;
+using Teramine.Interconnect.Models;
 
-namespace Teramine.DSC.Interconnect.Test
+namespace Teramine.Interconnect.Test
 {
     [TestFixture]
     public class BsonCodecTests

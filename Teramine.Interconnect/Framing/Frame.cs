@@ -29,12 +29,12 @@ using System.Text;
 using Force.Crc32;
 using System.Linq;
 using System.IO;
-using Teramine.DSC.Interconnect.Models;
+using Teramine.Interconnect.Models;
 using log4net;
-using Teramine.DSC.Interconnect.Codecs;
+using Teramine.Interconnect.Codecs;
 
 
-namespace Teramine.DSC.Interconnect.Framing
+namespace Teramine.Interconnect.Framing
 {
     public enum FrameType
     {

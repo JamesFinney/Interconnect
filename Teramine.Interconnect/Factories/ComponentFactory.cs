@@ -30,13 +30,13 @@ using System.Net.Security;
 using System.Net.Sockets;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
-using Teramine.DSC.Interconnect.Interfaces;
-using Teramine.DSC.Interconnect.Models;
-using Teramine.DSC.Interconnect.Network;
-using Teramine.DSC.Interconnect.Newtork;
+using Teramine.Interconnect.Interfaces;
+using Teramine.Interconnect.Models;
+using Teramine.Interconnect.Network;
+using Teramine.Interconnect.Newtork;
 
 
-namespace Teramine.DSC.Interconnect.Factories
+namespace Teramine.Interconnect.Factories
 {
     public class ComponentFactory : IComponentFactory
     {

@@ -28,7 +28,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading;
 
-namespace Teramine.DSC.Interconnect.Models
+namespace Teramine.Interconnect.Models
 {
     public class Message
     {

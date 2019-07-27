@@ -26,7 +26,7 @@
 using NUnit.Framework;
 using System;
 
-namespace Teramine.DSC.Interconnect.Test
+namespace Teramine.Interconnect.Test
 {
     [TestFixture]
     public class IdProviderTests

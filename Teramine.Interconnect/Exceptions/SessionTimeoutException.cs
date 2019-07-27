@@ -27,7 +27,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Teramine.DSC.Interconnect.Exceptions
+namespace Teramine.Interconnect.Exceptions
 {
     public class SessionTimeoutException : SessionException
     {

@@ -28,9 +28,9 @@ using System.Collections.Generic;
 using System.Net;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
-using Teramine.DSC.Interconnect.Models;
+using Teramine.Interconnect.Models;
 
-namespace Teramine.DSC.Interconnect.Interfaces
+namespace Teramine.Interconnect.Interfaces
 {
     public interface IComponentFactory
     {

@@ -27,7 +27,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Teramine.DSC.Interconnect
+namespace Teramine.Interconnect
 {
     public class IdProvider
     {

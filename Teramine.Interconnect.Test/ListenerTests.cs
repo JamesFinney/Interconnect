@@ -29,10 +29,10 @@ using System;
 using System.Collections.Generic;
 using System.Net;
 using System.Text;
-using Teramine.DSC.Interconnect.Exceptions;
-using Teramine.DSC.Interconnect.Interfaces;
+using Teramine.Interconnect.Exceptions;
+using Teramine.Interconnect.Interfaces;
 
-namespace Teramine.DSC.Interconnect.Test
+namespace Teramine.Interconnect.Test
 {
     [TestFixture]
     public class ListenerTests

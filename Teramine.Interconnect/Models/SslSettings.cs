@@ -29,10 +29,13 @@ using System.Collections.Generic;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 
-namespace Teramine.DSC.Interconnect.Models
+namespace Teramine.Interconnect.Models
 {
     public class SslSettings
     {
+        [JsonIgnore]
+        public static SslSettings NoSsl { get { return null; } }
+
         [JsonProperty("certificatePath")]
         public string CertificatePath { get; set; }
 

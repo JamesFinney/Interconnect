@@ -27,11 +27,11 @@ using NUnit.Framework;
 using System;
 using System.Collections.Generic;
 using System.Text;
-using Teramine.DSC.Interconnect.Codecs;
-using Teramine.DSC.Interconnect.Framing;
-using Teramine.DSC.Interconnect.Models;
+using Teramine.Interconnect.Codecs;
+using Teramine.Interconnect.Framing;
+using Teramine.Interconnect.Models;
 
-namespace Teramine.DSC.Interconnect.Test
+namespace Teramine.Interconnect.Test
 {
     [TestFixture]
     public class FramingTests

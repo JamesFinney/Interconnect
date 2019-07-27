@@ -30,14 +30,14 @@ using System.Net;
 using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
-using Teramine.DSC.Interconnect.Factories;
-using Teramine.DSC.Interconnect.Interfaces;
-using Teramine.DSC.Interconnect.Exceptions;
+using Teramine.Interconnect.Factories;
+using Teramine.Interconnect.Interfaces;
+using Teramine.Interconnect.Exceptions;
 using System.Threading;
 using System.Security.Cryptography.X509Certificates;
-using Teramine.DSC.Interconnect.Models;
+using Teramine.Interconnect.Models;
 
-namespace Teramine.DSC.Interconnect
+namespace Teramine.Interconnect
 {
     public class Listener : IListener
     {

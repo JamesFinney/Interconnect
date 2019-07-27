@@ -28,7 +28,7 @@ using System.Net;
 using System.Net.Sockets;
 using System.Threading.Tasks;
 
-namespace Teramine.DSC.Interconnect.Interfaces
+namespace Teramine.Interconnect.Interfaces
 {
     public interface ITcpClient : IDisposable
     {

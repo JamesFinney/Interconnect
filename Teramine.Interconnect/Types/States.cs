@@ -27,7 +27,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Teramine.DSC.Interconnect.Types
+namespace Teramine.Interconnect.Types
 {
     internal enum ConnectionState
     {

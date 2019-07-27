@@ -32,20 +32,20 @@ using System.Text;
 using System.Text.Json.Serialization;
 using System.Threading;
 using System.Threading.Tasks;
-using Teramine.DSC.Interconnect.Exceptions;
-using Teramine.DSC.Interconnect.Framing;
-using Teramine.DSC.Interconnect.Models;
-using Teramine.DSC.Interconnect.Types;
-using Teramine.DSC.Interconnect.Codecs;
+using Teramine.Interconnect.Exceptions;
+using Teramine.Interconnect.Framing;
+using Teramine.Interconnect.Models;
+using Teramine.Interconnect.Types;
+using Teramine.Interconnect.Codecs;
 using log4net;
 using System.Net;
-using Teramine.DSC.Interconnect.Interfaces;
-using Teramine.DSC.Interconnect.Factories;
+using Teramine.Interconnect.Interfaces;
+using Teramine.Interconnect.Factories;
 using System.Runtime.CompilerServices;
 using System.Security.Cryptography.X509Certificates;
 
 [assembly: InternalsVisibleTo("Teramine.DSC.Interconnect.Test")]
-namespace Teramine.DSC.Interconnect
+namespace Teramine.Interconnect
 {
     public class Connection : IConnection
     {
@@ -321,7 +321,7 @@ namespace Teramine.DSC.Interconnect
         {
             if (_activeSessions.ContainsKey(sessionId))
             {
-                _sendFrame(FrameType.MessageReject, Frame.CreateMessageAcceptFrame(sessionId, messageId, data));
+                _sendFrame(FrameType.MessageReject, Frame.CreateMessageRejectFrame(sessionId, messageId, data));
             }
         }
 

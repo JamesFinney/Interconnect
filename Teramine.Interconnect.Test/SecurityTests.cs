@@ -27,9 +27,9 @@ using NUnit.Framework;
 using System;
 using System.Collections.Generic;
 using System.Text;
-using Teramine.DSC.Interconnect.Models;
+using Teramine.Interconnect.Models;
 
-namespace Teramine.DSC.Interconnect.Test
+namespace Teramine.Interconnect.Test
 {
     [TestFixture]
     public class SecurityTests

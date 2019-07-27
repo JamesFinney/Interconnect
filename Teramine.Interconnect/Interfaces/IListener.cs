@@ -27,7 +27,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Teramine.DSC.Interconnect.Interfaces
+namespace Teramine.Interconnect.Interfaces
 {
     public interface IListener
     {

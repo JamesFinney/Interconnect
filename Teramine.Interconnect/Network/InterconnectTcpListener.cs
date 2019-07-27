@@ -28,11 +28,11 @@ using System.Net;
 using System.Net.Sockets;
 using System.Security.Cryptography.X509Certificates;
 using System.Threading.Tasks;
-using Teramine.DSC.Interconnect.Interfaces;
-using Teramine.DSC.Interconnect.Models;
-using Teramine.DSC.Interconnect.Network;
+using Teramine.Interconnect.Interfaces;
+using Teramine.Interconnect.Models;
+using Teramine.Interconnect.Network;
 
-namespace Teramine.DSC.Interconnect.Newtork
+namespace Teramine.Interconnect.Newtork
 {
     public class InterconnectTcpListener : ITcpListener
     {

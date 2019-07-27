@@ -30,7 +30,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 
-namespace Teramine.DSC.Interconnect.Codecs
+namespace Teramine.Interconnect.Codecs
 {
     public class BsonCodec : Codec
     {

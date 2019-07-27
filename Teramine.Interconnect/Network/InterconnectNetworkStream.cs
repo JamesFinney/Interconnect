@@ -33,11 +33,11 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using Teramine.DSC.Interconnect;
-using Teramine.DSC.Interconnect.Interfaces;
-using Teramine.DSC.Interconnect.Models;
+using Teramine.Interconnect;
+using Teramine.Interconnect.Interfaces;
+using Teramine.Interconnect.Models;
 
-namespace Teramine.DSC.Interconnect.Network
+namespace Teramine.Interconnect.Network
 {
     public class InterconnectNetworkStream : INetworkStream
     {

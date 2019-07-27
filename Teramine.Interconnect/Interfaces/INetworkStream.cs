@@ -29,7 +29,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Teramine.DSC.Interconnect.Interfaces
+namespace Teramine.Interconnect.Interfaces
 {
     public interface INetworkStream
     {

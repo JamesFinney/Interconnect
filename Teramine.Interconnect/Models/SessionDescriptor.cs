@@ -27,7 +27,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Teramine.DSC.Interconnect.Models
+namespace Teramine.Interconnect.Models
 {
     public class SessionDescriptor
     {

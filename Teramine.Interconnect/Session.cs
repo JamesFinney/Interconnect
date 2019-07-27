@@ -29,14 +29,14 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using Teramine.DSC.Interconnect.Exceptions;
-using Teramine.DSC.Interconnect.Framing;
-using Teramine.DSC.Interconnect.Interfaces;
-using Teramine.DSC.Interconnect.Models;
-using Teramine.DSC.Interconnect.Types;
+using Teramine.Interconnect.Exceptions;
+using Teramine.Interconnect.Framing;
+using Teramine.Interconnect.Interfaces;
+using Teramine.Interconnect.Models;
+using Teramine.Interconnect.Types;
 
 
-namespace Teramine.DSC.Interconnect
+namespace Teramine.Interconnect
 {
     public class Session : ISession
     {

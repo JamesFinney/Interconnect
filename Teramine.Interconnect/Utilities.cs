@@ -29,9 +29,9 @@ using System.Net;
 using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
-using Teramine.DSC.Interconnect.Exceptions;
+using Teramine.Interconnect.Exceptions;
 
-namespace Teramine.DSC.Interconnect
+namespace Teramine.Interconnect
 {
     public static class Utilities
     {
